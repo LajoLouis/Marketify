@@ -1,0 +1,84 @@
+{
+    "marketify" : [
+        {
+            "id": 1,
+            "name": "balenciaga",
+            "type": "bag",
+            "topSelling": true,
+            "price": 30000,
+            "img": "/images/Balenciagabag.jpeg"
+        },
+        {
+            "id": 2,
+            "name": "Chanel",
+            "type": "bag",
+            "topSelling": true,
+            "price": 24000,
+            "img": "/images/chanelbag.jpg"
+        },
+        {
+            "id": 3,
+            "name": "Senbolang",
+            "type": "bag",
+            "topSelling": false,
+            "price": 2500,
+            "img": "/images/senbolang.jpeg"
+        },
+        {
+            "id": 4,
+            "name": "Tote",
+            "type": "bag",
+            "topSelling": true,
+            "price": 6000,
+            "img": "/images/totebag.jpeg"
+        },
+        {
+            "id": 5,
+            "name": "Fendi",
+            "type": "Shirt",
+            "topSelling": false,
+            "price": 10000,
+            "img": "/images/fendi.jpeg"
+        },
+        {
+            "id": 6,
+            "name": "Versace",
+            "type": "Shirt",
+            "topSelling": false,
+            "price": 35000,
+            "img": "/images/versace.jpeg"
+        },
+        {
+            "id": 7,
+            "name": "Okirika",
+            "type": "Shirt",
+            "topSelling": true,
+            "price": 250,
+            "img": "/images/okirirka.jpeg"
+        },
+        {
+            "id": 8,
+            "name": "Gucci",
+            "type": "Shirt",
+            "topSelling": false,
+            "price": 25000,
+            "img": "/images/gucci.jpeg"
+        },
+        {
+            "id": 9,
+            "name": "Adidas",
+            "type": "Shoe",
+            "topSelling": true,
+            "price": 25000,
+            "img": "/images/adidas.jpg"
+        },
+        {
+            "id": 10,
+            "name": "Loafers",
+            "type": "Shoe",
+            "topSelling": true,
+            "price": 2500,
+            "img": "/images/loafers.jpeg"
+        }
+    ]
+}
