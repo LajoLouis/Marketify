@@ -1,6 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
+import ShopContext from "../context/ShopContext";
+import TopSellingCard from "../components/TopSellingCard";
+import ProductCard from "../components/ProductCard";
 
 function Home() {
+  const { topSelling } = useContext(ShopContext);
+
   return (
     <div>
       <div>
@@ -15,7 +20,14 @@ function Home() {
           </div>
         </div>
         <div>
-          <p>Testing</p>
+          <h1 className="font-bold py-2 w-[90%] mx-auto">
+            Top Selling Products
+          </h1>
+          <div className="flex overflow-x-auto w-full mt-4 gap-x-7 p-2">
+            {topSelling.map((product) => (
+              <ProductCard key={product.id} product={product}/>
+            ))}
+          </div>
         </div>
       </div>
     </div>

@@ -19,10 +19,14 @@ export const ShopProvider = ({children})=>{
         setProducts(data)        
     }
 
+    const topSelling = products.filter((product)=> product.topSelling == true)
+
+    
+
     
 
 
-    return <ShopContext.Provider value={products}>
+    return <ShopContext.Provider value={{products, topSelling}}>
         {children}
     </ShopContext.Provider>
 }
