@@ -5,10 +5,11 @@ import Profile from "./pages/Profile";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { ShopProvider } from "./context/ShopContext";
 import ProductDetail from "./pages/ProductDetail";
+import Cart from "./pages/Cart";
 
 function App() {
   return (
-    <div>
+    <div className="bg-stone-200/35 min-h-lvh">
       <ShopProvider>
         <Router>
           <Header />
@@ -16,6 +17,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/profile" element={<Profile />} />
             <Route path="/productdetail/:id" element={<ProductDetail/>} />
+            <Route path="/cart" element={<Cart/>} />
           </Routes>
         </Router>
       </ShopProvider>
