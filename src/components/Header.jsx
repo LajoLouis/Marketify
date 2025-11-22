@@ -3,6 +3,7 @@ import { RxAvatar } from "react-icons/rx";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FaCube } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { LuShoppingCart } from "react-icons/lu";
 
 function Header() {
   const [open, setIsOpen] = useState(false);
@@ -13,6 +14,7 @@ function Header() {
           <p>Shirts</p>
           <p>Shoes</p>
           <Link to="/profile">Profile</Link>
+          <Link className="flex items-center" to={`/cart`}><LuShoppingCart /><sup className=""><span className="bg-amber-600 text-white p-[3px] rounded-full">2</span></sup></Link>
     </div>
   )
 
@@ -36,11 +38,12 @@ function Header() {
         </div>
       </div>
       <div>
-        <div className={`w-[90%] mx-auto ${open ? "h-full md:hidden" : "h-0"} overflow-hidden transition-all duration-500 ease-in-out`}>
+        <div className={`w-[90%] space-y-3 mx-auto ${open ? "h-full md:hidden" : "h-0"} overflow-hidden transition-all duration-500 ease-in-out`}>
           <p>Top Selling</p>
           <p>Bags</p>
           <p>Shirts</p>
           <p>Shoes</p>
+          <p><LuShoppingCart /></p>
         </div>
       </div>
     </div>
