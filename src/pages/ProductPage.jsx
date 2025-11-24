@@ -49,7 +49,7 @@ function ProductPage() {
       <h1 className="text-2xl font-bold mb-6">Shop</h1>
 
       {/* Category Menu Buttons */}
-      <div className="flex gap-4 mb-8">
+      <div className="flex mb-8 md:gap-4">
         {categories.map(category => (
           <button
             key={category}

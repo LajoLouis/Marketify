@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { FaNairaSign } from "react-icons/fa6";
 import { useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 import ShopContext from "../context/ShopContext";
 import RelatedProducts from "../components/RelatedProducts";
 
@@ -27,7 +28,7 @@ function ProductDetail() {
             <h1 className="font-bold text-3xl">{specificProduct?.name}</h1>
             <p className="text-stone-500">{specificProduct?.description}</p>
             <p className="text-amber-500 font-bold flex items-center"><FaNairaSign />{specificProduct?.price}</p>
-            <button className="w-full py-3 bg-amber-500 text-black rounded-sm font-semibold">Add to cart</button>
+            <Link to="/cart"><button className="w-full py-3 bg-amber-500 text-black rounded-sm font-semibold md:cursor-pointer">Add to cart</button></Link>
           </div>
         </div>
       </div>

@@ -1,5 +1,6 @@
 import { FaMinus, FaPlus, FaTrash } from "react-icons/fa";
 import { FaNairaSign } from "react-icons/fa6";
+import { Link } from "react-router-dom"
 
 function Cart() {
   return (
@@ -53,9 +54,11 @@ function Cart() {
                   <FaNairaSign /> 450
                 </span>
               </p>
-              <button className="bg-amber-500 w-[90%] mx-auto p-[10px] rounded-sm text-black font-bold">
-                Proceed to Checkout
-              </button>
+              <Link to="/checkout">
+                <button className="bg-amber-500 w-[90%] mx-auto p-[10px] rounded-sm text-black font-bold md:cursor-pointer">
+                  Proceed to Checkout
+                </button>
+              </Link>
             </div>
           </div>
         </div>
