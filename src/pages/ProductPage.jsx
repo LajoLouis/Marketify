@@ -54,7 +54,7 @@ function ProductPage() {
           <button
             key={category}
             onClick={() => setActive(category)}
-            className={`px-6 py-2 rounded-full font-medium transition-all
+            className={`px-6 md:cursor-pointer py-2 rounded-full font-medium transition-all
               ${active === category 
                 ? "bg-amber-500 text-black shadow-sm" 
                 : "bg-gray-100 text-stone-700 hover:bg-gray-200"

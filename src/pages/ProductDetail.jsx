@@ -8,13 +8,13 @@ import RelatedProducts from "../components/RelatedProducts";
 function ProductDetail() {
     const param = useParams()
     const productId = param.id
-    console.log(productId);
+    // console.log(productId);
     
-    const {products} = useContext(ShopContext)
-    console.log(products);
+    const {products, addToCart} = useContext(ShopContext)
+    // console.log(products);
     
     const specificProduct = products.find((item) => (item.id) == (productId))
-    console.log(specificProduct);
+    // console.log(specificProduct);
   return (
     <div className="w-full">
       {/* Main Product Section */}
@@ -28,7 +28,7 @@ function ProductDetail() {
             <h1 className="font-bold text-3xl">{specificProduct?.name}</h1>
             <p className="text-stone-500">{specificProduct?.description}</p>
             <p className="text-amber-500 font-bold flex items-center"><FaNairaSign />{specificProduct?.price}</p>
-            <Link to="/cart"><button className="w-full py-3 bg-amber-500 text-black rounded-sm font-semibold md:cursor-pointer">Add to cart</button></Link>
+            <Link to="/cart"><button className="w-full py-3 bg-amber-500 text-black rounded-sm font-semibold md:cursor-pointer" onClick={()=> addToCart(specificProduct)}>Add to cart</button></Link>
           </div>
         </div>
       </div>
