@@ -49,12 +49,12 @@ function ProductPage() {
       <h1 className="text-2xl font-bold mb-6">Shop</h1>
 
       {/* Category Menu Buttons */}
-      <div className="flex mb-8 md:gap-4">
+      <div className="flex mb-8 flex-wrap gap-3 md:gap-4">
         {categories.map(category => (
           <button
             key={category}
             onClick={() => setActive(category)}
-            className={`px-6 py-2 rounded-full font-medium transition-all
+            className={`md:cursor-pointer px-6 py-2 rounded-full font-medium transition-all
               ${active === category 
                 ? "bg-amber-500 text-black shadow-sm" 
                 : "bg-gray-100 text-stone-700 hover:bg-gray-200"
