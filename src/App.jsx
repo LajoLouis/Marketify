@@ -8,6 +8,7 @@ import ProductDetail from "./pages/ProductDetail";
 import ProductPage from "./pages/ProductPage";
 import Cart from "./pages/Cart";
 import CheckoutPage from "./pages/CheckoutPage";
+import Alert from "./components/Alert";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <ShopProvider>
         <Router>
           <Header />
+          <Alert/>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/profile" element={<Profile />} />
