@@ -33,7 +33,7 @@ function Header() {
           }
         </div>
         <div className="flex md:hidden space-x-2 items-center">
-          <RxAvatar />
+          <Link to="/profile" className="text-blue-500 p-2 text-lg font-bold"><RxAvatar /> </Link>
           <GiHamburgerMenu onClick={() => setIsOpen(!open)} />
         </div>
       </div>

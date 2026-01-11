@@ -1,4 +1,4 @@
-import { useState, useCallback } from "react";
+import { useState } from "react";
 
 const useAlert = ()=>{
     const [alertMessage, setAlertMessage] = useState({
@@ -7,16 +7,15 @@ const useAlert = ()=>{
         message: ""
     })
 
-    const showAndHide = useCallback(
-      (type, message) => {
+    const showAndHide = (type, message) => {
         setAlertMessage({show:true, type, message})
 
         setTimeout(() => {
             setAlertMessage((prev)=>({...prev, show:false}))
         }, 3000);
-      },
-      [second],
-    )
+      }
+    
+    
 
     return {alertMessage, showAndHide}
     
