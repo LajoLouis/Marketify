@@ -43,7 +43,7 @@ function Header() {
           <p>Bags</p>
           <p>Shirts</p>
           <p>Shoes</p>
-          <p><LuShoppingCart /></p>
+          <Link to="/cart"><LuShoppingCart /></Link>
         </div>
       </div>
     </div>
